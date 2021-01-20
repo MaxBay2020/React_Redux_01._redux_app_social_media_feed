@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4b342dd-bd00-4496-a16a-260f6fa1a4fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/posts/AddPostForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/posts/EditPostForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/posts/PostAuthor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/posts/PostsList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/posts/SinglePostPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/posts/postsSlice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/users/usersSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/posts/ReactionButtons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/posts/TimeAgo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/posts/PostAuthor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/posts/PostAuthor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/posts/PostsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/posts/PostsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/posts/SinglePostPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/posts/SinglePostPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/posts/postsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/posts/postsSlice.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610970241438</updated>
       <workItem from="1610970242510" duration="469000" />
-      <workItem from="1611038561958" duration="13786000" />
+      <workItem from="1611038561958" duration="19603000" />
     </task>
     <servers />
   </component>

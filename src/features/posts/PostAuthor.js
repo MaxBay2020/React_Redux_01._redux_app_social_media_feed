@@ -7,8 +7,8 @@ export const PostAuthor = ({ userId }) => {
     ))
 
     return (
-        <p>
+        <span>
             by { author ? author.name : 'Unknown author' }
-        </p>
+        </span>
     )
 }

@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import { unwrapResult } from '@reduxjs/toolkit'
 
-import { postAdded } from './postsSlice'
+// import { postAdded } from './postsSlice'
+import { addNewPost } from './postsSlice'
 
 export const AddPostForm = () => {
     const [ title, setTitle ] = useState('')
     const [ content, setContent ] = useState('')
     const [ userId, setUserId ] = useState('')
+    const [ addRequestStatus, setAddRequestStatus ] = useState('idle')
 
     const onTitleChanged = e => setTitle(e.target.value)
     const onContentChanged = e => setContent(e.target.value)
@@ -16,13 +19,32 @@ export const AddPostForm = () => {
 
     const users = useSelector( state => state.users )
 
-    //点击发布按钮触发的事件
-    const onSavePostClicked = () => {
-        if(title && content){
-            //postAdded是一个action creator，我们需要传进去一个参数，这个参数将会作为action.payload的值
-            dispatch(postAdded(title, content, userId))
-            setTitle('')
-            setContent('')
+    // //点击发布按钮触发的事件
+    // const onSavePostClicked = () => {
+    //     if(title && content){
+    //         //postAdded是一个action creator，我们需要传进去一个参数，这个参数将会作为action.payload的值
+    //         dispatch(postAdded(title, content, userId))
+    //         setTitle('')
+    //         setContent('')
+    //     }
+    // }
+
+    const onSavePostClicked = async () => {
+        if(canSave){
+            try {
+                setAddRequestStatus('pending')
+                const resultAction = await dispatch(
+                    addNewPost({ title, content, user: userId })
+                )
+                unwrapResult( resultAction )
+                setTitle('')
+                setContent('')
+                setUserId('')
+            } catch (err) {
+                console.error('Failed to save the post: ',err)
+            } finally {
+                setAddRequestStatus('idle')
+            }
         }
     }
 
@@ -32,7 +54,8 @@ export const AddPostForm = () => {
         </option>
     ) )
 
-    const canSave = Boolean(title) && Boolean(content) && Boolean(userId)
+    // const canSave = Boolean(title) && Boolean(content) && Boolean(userId)
+    const canSave = [title, content, userId].every(Boolean) && addRequestStatus==='idle'
 
     return (
         <section>

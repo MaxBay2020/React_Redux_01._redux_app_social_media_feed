@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4b342dd-bd00-4496-a16a-260f6fa1a4fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/features/notifications/NotificationsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/notifications/notificationsSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/users/UserPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/users/UsersList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/posts/AddPostForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/posts/AddPostForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/posts/EditPostForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/posts/EditPostForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/posts/PostsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/posts/PostsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/posts/SinglePostPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/posts/SinglePostPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/posts/postsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/posts/postsSlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/users/usersSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/users/usersSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1610970241438</updated>
       <workItem from="1610970242510" duration="469000" />
-      <workItem from="1611038561958" duration="29961000" />
+      <workItem from="1611038561958" duration="30294000" />
+      <workItem from="1611540066224" duration="10322000" />
     </task>
     <servers />
   </component>
@@ -84,7 +87,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

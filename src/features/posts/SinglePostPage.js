@@ -12,7 +12,7 @@ export const SinglePostPage = ({ match })=>{
     const post = useSelector( state => (
         selectPostById( state, postId )
     ) )
-
+    
     if(!post){
         return (
             <section>

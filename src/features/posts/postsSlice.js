@@ -1,5 +1,5 @@
 //nanoid函数用来生成随机且唯一的数，可以作为主键
-import { createSlice, nanoid, createAsyncThunk } from '@reduxjs/toolkit'
+import { createSlice, nanoid, createAsyncThunk, createSelector } from '@reduxjs/toolkit'
 import { client } from '../../api/client'
 //sub(date时间, 相差时间)函数是用来计算date时间减去相差时间之后的时间
 import { sub } from 'date-fns'
@@ -111,8 +111,10 @@ export default postsSlice.reducer
 
 export const selectAllPosts = state => state.posts.posts
 
-export const selectPostById = ( state, postId ) => {
-    state.posts.posts.find(post => post.id===postId)
-}
+export const selectPostById = ( state, postId ) => state.posts.posts.find(post => post.id===postId)
 
+export const selectPostsByUser = createSelector(
+    [selectAllPosts, (state, userId) => userId],
+    (posts, userId) => posts.filter(post => post.user === userId)
+)
 
